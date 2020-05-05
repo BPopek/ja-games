@@ -1,0 +1,22 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
+.img {
+    width: 100px;
+    height: 100px;
+}
+@media (min-width: 650px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        height: 600px;
+        width: 800px;
+    }
+    /* .img {
+        width: 200px;
+        height: 200px;
+    } */
+}
