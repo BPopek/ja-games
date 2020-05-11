@@ -1,0 +1,47 @@
+.square {
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: black;
+    background-color: white;
+}
+.grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 618px;
+    height: 618px;
+    margin: 25px auto;
+}
+.mole {
+    background-image: url('Henry.png');
+    background-size: cover;
+    background-color: #dedede;
+}
+body {
+    text-align: center;
+    background-color: #f1f1f1;
+}
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+}
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 5px 3px;
+    display: inline-block;
+    color: #00677f;
+
+}
+.title {
+    color: black;
+}
+/* #score {
+    color: ;
+}
+#time-left {
+    color: #00677f;
+} */
