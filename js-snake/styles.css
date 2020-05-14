@@ -3,18 +3,33 @@
     height: 200px;
     display: flex;
     flex-wrap: wrap;
-    border: solid;
+    border: solid black 5px;
+    margin: 25px auto;
 }
-
 .grid div {
     width: 20px;
     height: 20px;
-
 }
 .snake {
     background-color: blue;
 }
 .apple {
     background-color: purple;
-
+}
+.container {
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+.score {
+    margin: 5px auto;
+    text-align: center;
+}
+.start {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+    background-color: grey;
+    padding: 5px;
+    color: white;
 }
