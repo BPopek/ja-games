@@ -1,9 +1,9 @@
 .square {
     width: 200px;
     height: 200px;
-    border-style: solid;
-    border-color: black;
-    background-color: white;
+    border: 3px solid black;
+    background-color: black;
+    border-radius: 50%;
 }
 .grid {
     display: flex;
@@ -13,11 +13,21 @@
     width: 618px;
     height: 618px;
     margin: 25px auto;
+    border: 8px #e0ac69 solid;
+    outline: 5px #ffdbac solid;
+    background-color: #ffdbac;
 }
+
+/* #8d5524
+#c68642
+#e0ac69
+#f1c27d
+#ffdbac */
+
 .mole {
     background-image: url('Henry.png');
     background-size: cover;
-    background-color: #dedede;
+    background-color: #e0ac69;
 }
 body {
     text-align: center;
