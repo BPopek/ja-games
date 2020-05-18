@@ -1,54 +1,66 @@
+.main {
+    position: relative;
+    text-align: center;
+    margin: 25px auto;
+    left: 0;
+    right: 0;
+}
 .grid {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     border: 5px solid yellow;
     background-color: yellow;
     height: 145px;
     width: 168px;
-    margin: 5px;
+    margin: 5px auto;
     padding: 2px;
 }
 .grid div {
+    position: relative;
     height: 20px;
     width: 20px;
     margin: 2px;
 }
 .player-one {
     background-color: red !important;
-    border-radius: 10px;
+    border-radius: 50%;
     z-index: 2;
 }
 .player-two {
     background-color: black !important;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 .open {
     box-sizing: border-box;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 .left {
     width: 5px;
-    height: 160px;
+    height: 170px;
     z-index: 2;
     background-color: blue;
     position: absolute;
+    left: -7px;
+    top: -5px;
 }
 .left-bottom {
     position: absolute;
     width: 0;
     height: 0;
     left: -7px;
-    top: 158px;
+    top: 165px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid blue;
 }
 .right {
     width: 5px;
-    height: 160px;
+    height: 170px;
     z-index: 2;
-    left: 195px;
+    left: 176px;
+    top: -5px;
     background-color: blue;
     position: absolute;
 }
@@ -56,9 +68,54 @@
     position: absolute;
     width: 0;
     height: 0;
-    left: -7px;
-    top: 158px;
+    left: -7.5px;
+    top: 165px;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid blue;
+}
+.currentPlayer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: grey;
+}
+@media (min-width: 700px) {
+    .grid {
+        height: 405px;
+        width: 478px;
+        margin: 10px auto;
+        padding: 4px;
+    }
+    .grid div {
+        height: 60px;
+        width: 60px;
+        margin: 4px;
+    }
+    .left {
+        width: 10px;
+        height: 450px;
+        z-index: 2;
+        left: -10px;
+        top: -5px;
+    }
+    .left-bottom {
+        left: -15px;
+        top: 445px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid blue;
+    }
+    .right {
+        width: 10px;
+        height: 450px;
+        z-index: 2;
+        left: 485px;
+        top: -5px; 
+    }
+    .right-bottom {
+        left: -15px;
+        top: 445px;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid blue;
+    }
 }
