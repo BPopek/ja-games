@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentPlayer = 1
 
-    for (let i = 0; len = squares.length; i++)
+    for (let i = 0, len = squares.length; i < len; i++)
 
         (function(index) {
             //first add an onclick to each square in the grid
