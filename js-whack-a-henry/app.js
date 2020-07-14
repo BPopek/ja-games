@@ -1,5 +1,5 @@
 const square = document.querySelectorAll('.square')
-const mole = document.querySelectorAll('.mole')
+const henry = document.querySelectorAll('.henry')
 const timeLeft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
 
@@ -8,10 +8,11 @@ let currentTime = timeLeft.textContent
 
 function randomSquare() {
     square.forEach(className => {
-        className.classList.remove('mole')
+        className.classList.remove('henry');
     })
+
     let randomPosition = square[Math.floor(Math.random() * 9)]
-    randomPosition.classList.add('mole')
+    randomPosition.classList.add('henry')
 
     //assigns id of randomPosition to hitPosition for later
     hitPosition = randomPosition.id 
@@ -22,6 +23,11 @@ square.forEach(id => {
         if (id.id === hitPosition) {
             result = result + 1
             score.textContent = result
+
+            //clears square after point
+            square.forEach(className => {
+                className.classList.remove('henry');
+            })
         }
     })
 })
